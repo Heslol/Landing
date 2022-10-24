@@ -1,0 +1,19 @@
+@import '_header2';
+@import '_block2';
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1920px;
+    width: 100%;
+    height: fit-content;
+    @media (max-width:1200px) {
+        margin: auto;
+    };
+    @media (max-width:992px) {
+        margin: auto;
+    };
+    @media (max-width:767px) {
+        margin: auto;
+    }
+}

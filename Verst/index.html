@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header"> 
+                <div class="header-nav">
+                    <div class="header-logo">Explore</div>
+                    <div class="header-nav-list">
+                        <div class="header-nav-list-item"><a href="#">Home</a></div>
+                        <div class="header-nav-list-item"><a href="#">Tours</a></div>
+                        <div class="header-nav-list-item"><a href="#">Hotel</a></div>
+                        <div class="header-nav-list-item"><a href="#">Gallery</a></div>
+                        <div class="header-nav-list-item"><a href="#">Pages</a></div>
+                        <div class="header-nav-list-item"><a href="#">Blog</a></div>
+                        <div class="header-nav-list-item"><a href="#">Contacts</a></div>
+                        <button class="header-nav-list-btn">Sign UP</button>
+                        <div class="header-nav-burger" style="display: none;@media (max-width:767px) {display:block;}">
+                           <hr style="width: 10px;margin-top:2px;border-bottom-color: #FFC814;">
+                           <hr style="width: 10px;margin-top:2px;border-bottom-color: #FFC814;">
+                           <hr style="width: 10px;margin-top:2px;border-bottom-color: #FFC814;">
+                        </div>
+                        <!--Modal-->
+                        <div class="Modal">
+                            <div class="Modal-body">
+                                <div class="Modal-body-title">Get the latest information as soon as possible
+                                    <span class="title-span">&#10007;</span>
+                                </div>
+                                <div class="Modal-body-subtitle"> 
+                                    <input type="text" name="name" id="inp1"     placeholder="Name">
+                                    <input type="email" name="mail" id="inp2"    placeholder="Email">
+                                    <input type="password" name="pass" id="inp3" placeholder="Password">
+                                    <div class="out-1" style="display: none;"></div>
+                                    <div class="out-2" style="display: none;"></div>
+                                    <div class="out-3" style="display: none;"></div>
+                                    <button class="Modal-btn">Sign UP</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-main">
+                    <div class="header-main-title">It’s a Big World
+                        Out There, Go
+                        Explore</div>
+                    <div class="header-main-subtitle">Conveniently customize proactive web services for leveraged without 
+                        continualliery aggregate fricctionle ou wellies richard.and very 
+                        customize  continually.
+                    </div>
+                    <div class="header-main-btn">
+                        <button class="btn-1">Get Exploration</button>
+                        <button class="btn-2">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-table">
+                <div class="header-table-block">
+                    <div class="header-table-block-check">
+                        <div class="header-table-block-check-item active">
+                            <img src="Img/hotel.png" alt="4" class="check-img">Hotel
+                        </div>
+                        <div class="header-table-block-check-item active">
+                            <img src="Img/Flight 1.png" alt="4" class="check-img">Flight
+                        </div>
+                        <div class="header-table-block-check-item active">
+                            <img src="Img/car 1.png" alt="4" class="check-img">Car
+                        </div>
+                        <div class="header-table-block-check-item active">
+                            <img src="Img/Ship 1.png" alt="4" class="check-img">Ship
+                        </div>
+                    </div>
+                    <div class="header-table-block-content">
+                        <div class="header-table-block-content-item">
+                            <div class="header-table-block-content-item-title">
+                                Your destination
+                            </div>
+                            <input list="cities" placeholder="City" id="city" class="city-input">
+                            <datalist id="cities">
+                                <option value="Bangkok">
+                                <option value="Praha">
+                                <option value="Bratislava">
+                                <option value="Tbilisi">
+                                <option value="Erevan">
+                                <option value="Istanbul">
+                                <option value="Ankara">
+                                <option value="Athens">
+                                <option value="Budapesht">
+                                <option value="Bucharest">
+                                <option value="Viehna">
+                                <option value="Munchen">
+                                <option value="Dortmund">
+                                <option value="Zurich">
+                            </datalist>
+                        </div>
+                        <div class="header-table-block-content-item">
+                            <div class="header-table-block-content-item-title">
+                                Check in
+                            </div>
+                            <input type="date" id="date-in">
+                        </div>
+                        <div class="header-table-block-content-item">
+                            <div class="header-table-block-content-item-title">
+                                Check out
+                            </div>
+                            <input type="date" placeholder="  /  /2022" id="date-out">
+                        </div>
+                        <div class="header-table-block-content-item">
+                            <div class="header-table-block-content-item-title">
+                                Child
+                            </div>
+                            <input type="number" placeholder="0" min="0" id="child-input">
+                        </div>
+                        <div class="header-table-block-content-item">
+                            <div class="header-table-block-content-item-title">
+                                Adult
+                            </div>
+                            <input type="number" placeholder="0" min="0" id="adult-input">
+                        </div>
+                        <button class="header-table-btn">Book Now</button>
+                        <div class="out"></div>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="block">
+            <span class="block-span">Travel</span>
+            <img class="block-img" src="Img/otP7x-removebg-preview 3.png" alt="3">
+            <div class="block-info">
+                <div class="block-info-images">
+                    <img src="Img/BG.png" alt="4" class="img-1"     class="img-1">
+                    <img src="Img/BG (1).png" alt="4" class="img-2" class="img-2">
+                </div>
+                <div class="block-info-text">
+                    <span class="text-span">About us</span>
+                    <div class="block-info-text-title">World Best Travel Agency Company Since 2008.</div>
+                    <div class="block-info-text-subtitle">Continually productize compelling quality for packed with  elated
+                        productize compelling quality for packed in  with all elated Them
+                        Setting up to website and creating pages.
+                    </div>
+                    <ul class="more-list">
+                        <li><span class="more-span">&#10003;</span>
+                            We providing compe quality for packed with elated different.</li>
+                        <li><span class="more-span">&#10003;</span>
+                            We are one of compelling quality for packed with leading.</li>
+                        <li><span class="more-span">&#10003;</span>
+                            Learn how compelling quality for packed with  elated grow.</li>
+                    </ul>
+                    <div class="block-info-text-row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+                        <div class="block-info-text-row-col">
+                            <div class="block-info-text-row-col-title">20+
+                               </div>
+                            <div class="block-info-text-row-col-subtitle"> Year 
+                                Experience</div>
+                        </div>
+                        <div class="block-info-text-row-col">
+                            <div class="block-info-text-row-col-title">250+
+                               </div>
+                            <div class="block-info-text-row-col-subtitle"> Destination 
+                                Collaboratin</div>
+                        </div>
+                        <div class="block-info-text-row-col">
+                            <div class="block-info-text-row-col-title">170K+
+                                </div>
+                            <div class="block-info-text-row-col-subtitle">Happy  
+                                Customers</div>
+                        </div>
+                    </div>
+                    <button class="block-down-btn">Read More</button>
+                </div>
+            </div>
+    
+    
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html> 
