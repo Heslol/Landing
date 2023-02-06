@@ -1,0 +1,32 @@
+.mainPage {
+    background-color: #00000e;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    @media (max-width: 1101px) {
+        flex-wrap: wrap;
+    };
+};
+
+.main {
+    &_list {
+        margin: 100px 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-inline-start: 0px;
+        li {
+            margin: 1vh 1vw;
+            @media (max-width: 767px) {
+                max-width: 370px;
+                width: 100%;
+                justify-content: center;
+            };
+        };
+    };
+};
+

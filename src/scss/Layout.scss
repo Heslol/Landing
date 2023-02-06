@@ -1,0 +1,112 @@
+@import '_propositions.scss';
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid azure;
+    padding: 0.5vh 0.5vw;
+    border-radius: 50%;
+    width: 60px;
+    height: 55px;
+    font-size: x-small;
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    color: azure;
+    background: linear-gradient(45deg, #FFFeee, rgb(241, 214, 7));
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    Button {
+        width: 60px;
+        height: 40px;
+    };
+    &_list {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+        padding-inline-start: 0;
+        padding-inline-end: 10px;
+        li {
+            margin: 1vh 4vw;
+            a {
+                text-decoration: none;
+                color: azure;
+            };
+            a:hover {
+                color: #00000e;
+                font-weight: bold;
+                transition: 0.5s all;
+            };
+            a:active {
+                text-decoration: underline;
+            }
+        }
+    }
+};
+
+.footer {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #FFFeee, rgb(241, 214, 7));
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00000e;
+    h6 {
+        margin: 2vw;
+        @media (max-width: 565px) {
+            font-size: xx-small;
+        }
+    };
+    &_content {
+        display: flex;
+        justify-content: space-around;
+        &_list {
+            list-style: none;
+            color: azure;
+            font-size: x-small;
+            padding-inline-start: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                margin: 0 1vw;
+                a {
+                    text-decoration: none;
+                    color: azure;
+                };
+                a:hover {
+                    transform: translate3d(1.2em, 1.2em, 1.2em);
+                };
+            }
+        };
+    };
+    &_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: x-small;
+        margin-right: 1vw;
+        span {
+            margin: 0 1vw;
+        };
+    };
+};

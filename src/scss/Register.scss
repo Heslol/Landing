@@ -1,0 +1,70 @@
+.login {
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00000e;
+    margin: 11vh auto;
+    Input {
+        margin: 1vh 0;
+    };
+    &_list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: x-small;
+        li {
+            margin: 1vh 1vw;
+        }
+    };
+}
+.register {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    h1 {
+        color: #FFFFFF;
+        text-align: center;
+        padding: 2vh 0;
+    }  
+    &_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25vh
+    };
+    &_page {
+        border-radius: 10px;
+        padding: 10px;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #00000e;
+        margin: 11vh auto;
+        Button {
+            width: 80px
+        };
+        Input {
+            margin: 1vh 0;
+        };
+        &_list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: x-small;
+            li {
+                margin: 1vh 1vw;
+            }
+        };
+    }
+};
+

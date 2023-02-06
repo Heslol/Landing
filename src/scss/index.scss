@@ -1,0 +1,35 @@
+@import 'Layout.scss';
+@import 'MainPage.scss';
+@import 'Blogs.scss';
+@import 'Register.scss';
+
+* {
+    margin: 0;
+    padding-inline-start: 0;
+    font-family: 'Playfair Display', serif;
+};
+
+Button {
+    margin: 1vh 2vw;
+    background-color: #00000e;
+    border: 1px solid azure;
+    color: azure;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60px;
+    height: 25px;
+};
+
+Button:hover {
+    font-weight: bold;
+    color: #FFFFFF;
+    box-shadow: 2px 2px 12px 2px #FFFFFF;
+};
+
+Input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
