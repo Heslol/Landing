@@ -1,0 +1,64 @@
+body {
+    font-family: 'Freehand', cursive;
+    max-width: 2120px;
+    width: 100%;
+    color: #FFFFFF;
+    background: linear-gradient( 180deg, rgba(19, 19, 20, 0.8) 23.77%, rgba(0, 0, 0, 0) 66.11%);
+};
+header { 
+    h1 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.container {
+    min-width: 80vh;
+    margin: auto;
+    &-wrapper {
+        display: flex;
+        padding: 0 5px;
+        .slide {
+            position: relative;
+            width: 10vw;
+            height: 80vh;
+            transform: skew(18deg, 5deg);
+            border-radius: 10px;
+            flex: 1;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            margin: auto;
+            h3 {
+                display: none;
+            }
+        }
+        .slide.active {
+            flex: 80%;
+            height: 90vh;
+            width: 220vw;
+            box-shadow: 2px 2px 12px 2px black;
+            transition: 0.3s ease-in-out;
+            h3 {
+                display: block;
+                font-size: x-large;
+                position: absolute;
+                bottom: 0;
+                left: 20px;
+                transition: 1.4s ease-in-out;
+            }
+        };
+        .slide::after{
+            width: 10vw;
+            height: 80vh;
+            transform: skew(18deg, 5deg);
+        }
+    };
+    &-footer {
+        h3 {
+            display: inline;
+            color: black;
+        }
+    }
+}
